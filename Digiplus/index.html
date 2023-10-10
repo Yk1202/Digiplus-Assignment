@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "App">
+        <link rel='stylesheet' href='index.css'></link>
+        <label for="node" id = 'ti'>Choose a Node Type:</label>
+  
+        <select name="nodetype" id="nodetype">
+          <option value="none">Select a Type</option>
+          <option value="single">single</option>
+          <option value="parent">parent</option>
+          <option value="child">child</option>
+        </select>
+        <div id = 'Nodename'>
+          <label for="nodename">Node Value:</label>
+          <input type="text" id="nodename" name="nodename"></input>
+          <br>
+          <button type="button" id = 'noden' onClick={Addnode()} >Add Node</button>
+        </div>
+        <div id = 'select'>
+          <label for="nodename">Selected Node:</label>
+          <input type="text" id="nodename" name="nodename"></input>
+          <button type="button" id = 'updaten'>Update Node</button>
+          <button type="button" id = 'deleten' >Delete Node</button>
+        </div>
+        <script src= 'index.js'></script>
+  
+        
+    </div>
+</body>
+</html>
